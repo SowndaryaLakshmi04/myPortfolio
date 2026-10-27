@@ -54,4 +54,4 @@ This project is part of my continuous learning journey in web development. It pr
 
 ⭐ If you find my portfolio interesting, feel free to explore my projects and connect with me!
 
-**Designed and developed with passion by [Your Name].**
+**Designed and developed with passion by Sowndarya Lakshmi S.**
