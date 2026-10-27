@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sowndarya Lakshmi | Portfolio</title>
+  <meta name="description" content="Portfolio of [YOUR NAME], an aspiring software developer building thoughtful web experiences.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    /* Apply saved theme before paint to avoid a flash */
+    try { document.documentElement.dataset.theme = localStorage.getItem('theme') || 'light'; } catch (e) {}
+  </script>
+</head>
+<body>
+
+  <!-- INTRO COVER (separate from main content) -->
+  <div id="intro" class="intro" aria-hidden="true">
+    <!-- <img src="assets/portfolio-intro.png" alt="" class="intro__image" onerror="this.remove()"> -->
+    <p class="intro__fallback">Sowndarya Lakshmi S<span>portfolio</span></p>
+  </div>
+
+  <div id="site" class="site">
+    <header class="nav">
+      <a href="#home" class="nav__logo">&lt;SL.portfolio/&gt;</a>
+      <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="menu" class="nav__menu" aria-label="Main">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button id="themeToggle" class="theme-toggle" aria-label="Switch to dark theme">◐</button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section id="home" class="hero">
+        <div class="hero__text">
+          <p class="note">Hi, I'm</p>
+          <h1>Sowndarya Lakshmi S</h1>
+          <p class="hero__role">Aspiring Software Developer | CS Student</p>
+          <p>Building thoughtful digital experiences through clean code, creative design, and continuous learning.</p>
+          <div class="hero__buttons">
+            <a href="#projects" class="btn btn--solid">View Projects</a>
+            <!-- Replace assets/resume.pdf with your own resume -->
+            <a href="assets/resume.pdf" class="btn" target="_blank" rel="noopener noreferrer">View Resume</a>
+          </div>
+        </div>
+
+        <figure class="hero__art">
+          <svg class="doodle doodle--star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C13 8 16 11 24 12 16 13 13 16 12 24 11 16 8 13 0 12 8 11 11 8 12 0Z"/></svg>
+          <svg class="doodle doodle--squiggle" viewBox="0 0 64 20" aria-hidden="true"><path d="M2 10Q12 0 22 10T42 10T62 10"/></svg>
+          <img src="assets/computer.png" alt="Illustration of a computer showing code, a coffee cup and gears" width="740" height="740">
+        </figure>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section">
+        <h2><em>About.</em></h2>
+        <div class="about">
+          <div class="about__text">
+            <p>I am a computer science student and aspiring software developer passionate about technology, creativity, and problem-solving. I enjoy building projects, exploring new technologies, and turning ideas into reality. Always ready to create something meaningful.</p>
+            <p>My interests include web development, backend systems, and database design. I learn best by building projects, reading documentation, and refining my code after feedback.</p>
+          </div>
+          <figure class="about__photo">
+            <img src="assets/profile.jpeg" alt="Portrait of Sowndarya Lakshmi" onerror="this.style.visibility='hidden'">
+          </figure>
+        </div>
+
+        <div class="journey">
+          <div>
+            <h3>Education</h3>
+          <ol class="timeline">
+            <li><h4>B.E. Computer Science and Engineering | 2023 – 2027</h4><p>Mahendra College of Engineering</p><p>CGPA: 8.3</p></li>
+            <li><h4>Higher Secondary Education | 2021 – 2023</h4><p>Holy Angel's Matric Hr. Sec. School</p><p>Percentage: 75%</p></li>
+            <li><h4>Secondary Education | 2020 – 2021</h4><p>St.Joseph Matriculation School</p><p>Percentage: Passed</p></li>
+          </ol>
+          </div>
+          <div>
+            <h3>Experience</h3>
+            <ol class="timeline">
+              <li><h4>Web Development Intern | 2026</h4><p>RISE Internship Program, Tamizhan Skills</p><p>Worked on web development tasks as part of the Internship program.</p></li>
+              <li><h4>Java Full-Stack Intern | 2026</h4><p>Infosys Virtual Internship 7.0</p><p>Built FinCore, a full-stack banking application using React.js, Spring Boot, and MySQL.</p></li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS (edit the lists freely) -->
+      <section id="skills" class="section">
+        <h2><em>Skills.</em></h2>
+        <div class="skills">
+          <article class="box"><h3>Programming Languages</h3><ul><li>Java</li><li>JavaScript</li><li>Python</li></ul></article>
+          <article class="box"><h3>Web Technologies</h3><ul><li>HTML5</li><li>CSS3</li><li>React.js</li><li>Bootstrap</li></ul></article>
+          <article class="box"><h3>Backend & APIs</h3><ul><li>Spring Boot</li><li>Node.js</li><li>Express.js</li><li>REST APIs</li></ul></article>
+          <article class="box"><h3>Database</h3><ul><li>MySQL</li><li>PostgreSQL</li><li>Oracle SQL</li><li>MongoDB</li></ul></article>
+          <article class="box"><h3>Developer Tools</h3><ul><li>Git</li><li>GitHub</li><li>Postman</li><li>VS Code</li><li>Eclipse</li></ul></article>
+          <article class="box"><h3>AI & Others</h3><ul><li>Generative AI</li><li>NLP</li><li>Prompt Engineering</li></ul></article>
+        </div>
+      </section>
+
+      <!-- PROJECTS (cards are generated from script.js) -->
+      <section id="projects" class="section">
+        <h2><em>Projects.</em></h2>
+        <div class="projects" id="projectGrid"></div>
+        <div class="details" id="projectDetails" aria-live="polite" hidden></div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section contact">
+        <h2><em>Contact.</em></h2>
+        <div class="contact__card">
+          <p class="note">Let’s connect and create!</p>
+          <p>I'm always eager to learn, explore new opportunities, and connect with like-minded people. Feel free to reach out for Internships, or Career Opportunities!</p>
+          <div class="hero__buttons">
+            <a class="btn btn--solid" href="mailto:sowndaryalakshmi04@gmail.com">Send Email</a>
+            <button class="btn" id="copyEmail" type="button">Copy email</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year">2026</span> Sowndarya Lakshmi S. All rights reserved.</p>
+      <p>
+        <!-- <a href="" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+        <a href="" target="_blank" rel="noopener noreferrer">GitHub</a> |
+        <a href="">Email</a> -->
+      
+<div class="social-links">
+    <a href="https://www.linkedin.com/in/sowndaryalakshmi04" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin"></i>
+    </a>
+
+    <a href="https://github.com/SowndaryaLakshmi04" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+    </a>
+
+    <a href="mailto:sowndaryalakshmi04@gmail.com" aria-label="Email">
+        <i class="fa-solid fa-envelope"></i>
+    </a>
+</div>
+
+      </p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
