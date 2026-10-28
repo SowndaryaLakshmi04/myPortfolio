@@ -6,7 +6,7 @@ const projects = [
     summary: "A digital banking application to manage customers, accounts, transactions, and related banking operations.",
     tech: ["Java", "Spring Boot", "React.js", "MySQL", "REST APIs"],
     overview: "FinCore is a secure digital banking application developed as part of my Infosys Virtual Internship 7.0. It simplifies banking operations through features such as customer management, account management, transaction processing, loan applications, and report generation. Built using React.js, Java, Spring Boot, and MySQL, the platform focuses on security, efficiency, and a user-friendly experience.",
-    features: ["Role-Based Access","Customer Management", "Account management","Transaction Management", "Loan Management"],
+    features: ["Customer and account management", "Deposits, withdrawals, and transfers", "Transaction history"],
     github: "https://github.com/SowndaryaLakshmi04/finCoreBankApplication"
   },
   {
@@ -163,12 +163,21 @@ function setupProjects() {
 /* ===== CONTACT ===== */
 function setupCopyEmail() {
   const button = $("#copyEmail");
+  const email = "sowndaryalakshmi04@gmail.com"; // change this if your email changes
+
   button.addEventListener("click", async () => {
     try {
-      await navigator.clipboard.writeText($("#emailText").textContent.trim());
-      button.textContent = "Copied";
-    } catch (e) {
-      button.textContent = "Copy failed";
+      await navigator.clipboard.writeText(email);
+      button.textContent = "Copied!";
+    } catch (error) {
+      // Fallback for browsers that block the clipboard API
+      const temp = document.createElement("textarea");
+      temp.value = email;
+      document.body.appendChild(temp);
+      temp.select();
+      const ok = document.execCommand("copy");
+      temp.remove();
+      button.textContent = ok ? "Copied!" : "Copy failed";
     }
     setTimeout(() => (button.textContent = "Copy email"), 1800);
   });
