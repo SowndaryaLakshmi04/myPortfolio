@@ -26,6 +26,15 @@ const projects = [
     overview: "Booklyn is a responsive online bookstore website that allows users to browse, search, and filter books across different categories. It features an interactive shopping cart with persistent storage, providing a smooth and user-friendly book-shopping experience.",
     features: ["Browse books by category", "Search and filter books", "Interactive shopping cart","Cart data persistence using localStorage"],
     github: "https://github.com/SowndaryaLakshmi04/booklyn"
+  },
+  {
+    id: "daily-notes",
+    title: "DailyNotes - Personal Task & Productivity Planner",
+    summary: "A stationery-inspired productivity application designed to help users organize daily tasks, manage priorities, and track progress.",
+    tech: ["HTML5", "CSS3", "JavaScript (ES6+)", "LocalStorage API"],
+    overview: "Daily Notes is a personal task management and productivity tracker designed to make everyday planning simple and enjoyable. It allows users to create, edit, delete, and categorize tasks, set due dates, track completion, and filter tasks based on status. Featuring a cozy stationery-inspired interface with pastel colors and hand-drawn illustrations, the application combines functionality with a calming user experience. Tasks are saved using browser localStorage, ensuring data persists even after page reloads.",
+    features: ["Task creation, editing, and deletion", "Task categorization (Work, Personal, Study, Other)", "Due dates and priority management", "Task completion tracking", "All, Active, and Completed filters", "Task search", "Drag-and-drop task reordering", "Productivity statistics", "localStorage persistence", "Responsive design and interactive animations"],
+    github: "https://github.com/SowndaryaLakshmi04/dailyNotes/"
   }
 ];
 
