@@ -39,9 +39,9 @@ const projects = [
   {
   id: "weather-telemetry",
   title: "Climate Telemetry - Real-Time Weather Forecast Dashboard",
-  summary: "A premium dark-themed weather dashboard that fetches live data from the OpenWeatherMap API to show current conditions, hourly updates, and a 5-day forecast for any city worldwide.",
+  summary: "A weather dashboard that fetches live data from the OpenWeatherMap API to show current conditions, hourly updates, and a 5-day forecast for any city worldwide.",
   tech: ["HTML5", "CSS3", "JavaScript (ES6+)", "Fetch API", "OpenWeatherMap API"],
-  overview: "Climate Telemetry is a real-time weather application designed to make checking the forecast fast and visually engaging. Users can search any city in the world and instantly see the current temperature, weather conditions, humidity, wind speed, pressure, visibility, sunrise and sunset, and air quality. Featuring a glassmorphism dashboard interface with a compact sidebar and weather-based background gradients, the application combines live data with a smooth, modern user experience. All data is retrieved asynchronously using fetch with async/await and try/catch, with loading spinners and friendly error messages for invalid cities, network failures, and API limits.",
+  overview: "Climate Telemetry is a real-time weather application designed to make checking the forecast fast and visually engaging. Users can search any city in the world and instantly see the current temperature, weather conditions, humidity, wind speed, pressure, visibility, sunrise and sunset, and air quality. All data is retrieved asynchronously using fetch with async/await and try/catch, with loading spinners and friendly error messages for invalid cities, network failures, and API limits.",
   features: ["Global city search with same-name city selection", "Live current weather with dynamic icons", "Humidity, wind, pressure, and visibility metrics", "Scrollable hourly forecast with rain probability", "Dynamically generated 5-day forecast using Array.map()", "Sunrise, sunset, wind direction, and air quality panel", "Weather and day/night based background themes", "Celsius and Fahrenheit toggle", "Loading spinner and graceful error handling", "Responsive design for desktop, tablet, and mobile"],
   github: "https://github.com/SowndaryaLakshmi04/weatherTelemetry/"
 }
